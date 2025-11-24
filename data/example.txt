@@ -1,0 +1,227 @@
+FrameLayout #roombox
+FrameLayout #roombox
+DefaultUI #roombox
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+ImageView #roombox #header #logo;#header #logo;#logo
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+LinearLayout #roombox #header #app;#header #app;#app
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+LinearLayout #roombox #header #app;#header #app;#app
+ImageView #roombox #header #app #icon;#header #app #icon;#app #icon;#icon
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+LinearLayout #roombox #header #app;#header #app;#app
+TextView #roombox #header #app #title;#header #app #title;#app #title;#title
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+LinearLayout #roombox #header #weather;#header #weather;#weather
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+LinearLayout #roombox #header #weather;#header #weather;#weather
+ImageView #roombox #header #weather #icon;#header #weather #icon;#weather #icon;#icon
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+LinearLayout #roombox #header #weather;#header #weather;#weather
+TextView #roombox #header #weather #temp;#header #weather #temp;#weather #temp;#temp
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+LinearLayout #roombox #header #weather;#header #weather;#weather
+TextView #roombox #header #weather #location;#header #weather #location;#weather #location;#location
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+FrameLayout #roombox #header;#header
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+FrameLayout #roombox #header;#header
+LinearLayout #roombox #header;#header
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+FrameLayout #roombox #header;#header
+LinearLayout #roombox #header;#header
+ImageView #roombox #header #network_state;#header #network_state;#network_state
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+FrameLayout #roombox #header;#header
+LinearLayout #roombox #header;#header
+ImageView #roombox #header #timer_state;#header #timer_state;#timer_state
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+FrameLayout #roombox #header;#header
+LinearLayout #roombox #header;#header
+ImageView #roombox #header #schedule_state;#header #schedule_state;#schedule_state
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+FrameLayout #roombox #header;#header
+LinearLayout #roombox #header;#header
+ImageView #roombox #header #new_message_icon;#header #new_message_icon;#new_message_icon
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #header;#header
+FrameLayout #roombox #header;#header
+TextView #roombox #header #clock;#header #clock;#clock
+FrameLayout #roombox
+DefaultUI #roombox
+FrameLayout #roombox #content;#content
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+FrameLayout #roombox
+BusyCat #roombox
+ModuleView 
+ModuleView 
+WelcomeView  #welcome; .module;#welcome;.module
+ModuleView 
+WelcomeView  #welcome; .module;#welcome;.module
+TextView  #welcome #message; .module #message;#welcome #message;.module #message;#message
+ModuleView 
+WelcomeView  #welcome; .module;#welcome;.module
+LinearLayout  #welcome; .module;#welcome;.module
+ModuleView 
+WelcomeView  #welcome; .module;#welcome;.module
+LinearLayout  #welcome; .module;#welcome;.module
+LinearLayout  #welcome #video; .module #video;#welcome #video;.module #video;#video
+ModuleView 
+WelcomeView  #welcome; .module;#welcome;.module
+LinearLayout  #welcome; .module;#welcome;.module
+LinearLayout  #welcome #video; .module #video;#welcome #video;.module #video;#video
+BusyCat  #welcome #video; .module #video;#welcome #video;.module #video;#video
+ModuleView 
+WelcomeView  #welcome; .module;#welcome;.module
+LinearLayout  #welcome; .module;#welcome;.module
+RecyclerView  #welcome #news; .module #news;#welcome #news;.module #news;#news
+ModuleView 
+WelcomeView  #welcome; .module;#welcome;.module
+ScrollTextView  #welcome #marquee; .module #marquee;#welcome #marquee;.module #marquee;#marquee
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+ImageView #roombox #launchpad .item #icon;#roombox #launchpad .selectable #icon;#launchpad .item #icon;#launchpad .selectable #icon;.item #icon;.selectable #icon;#icon
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+ScrollTextView #roombox #launchpad .item #text;#roombox #launchpad .selectable #text;#launchpad .item #text;#launchpad .selectable #text;.item #text;.selectable #text;#text
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+ImageView #roombox #launchpad .item #icon;#roombox #launchpad .selectable #icon;#launchpad .item #icon;#launchpad .selectable #icon;.item #icon;.selectable #icon;#icon
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+ScrollTextView #roombox #launchpad .item #text;#roombox #launchpad .selectable #text;#launchpad .item #text;#launchpad .selectable #text;.item #text;.selectable #text;#text
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+ImageView #roombox #launchpad .item #icon;#roombox #launchpad .selectable #icon;#launchpad .item #icon;#launchpad .selectable #icon;.item #icon;.selectable #icon;#icon
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+ScrollTextView #roombox #launchpad .item #text;#roombox #launchpad .selectable #text;#launchpad .item #text;#launchpad .selectable #text;.item #text;.selectable #text;#text
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+ImageView #roombox #launchpad .item #icon;#roombox #launchpad .selectable #icon;#launchpad .item #icon;#launchpad .selectable #icon;.item #icon;.selectable #icon;#icon
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+ScrollTextView #roombox #launchpad .item #text;#roombox #launchpad .selectable #text;#launchpad .item #text;#launchpad .selectable #text;.item #text;.selectable #text;#text
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+ImageView #roombox #launchpad .item #icon;#roombox #launchpad .selectable #icon;#launchpad .item #icon;#launchpad .selectable #icon;.item #icon;.selectable #icon;#icon
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+ScrollTextView #roombox #launchpad .item #text;#roombox #launchpad .selectable #text;#launchpad .item #text;#launchpad .selectable #text;.item #text;.selectable #text;#text
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+ImageView #roombox #launchpad .item #icon;#roombox #launchpad .selectable #icon;#launchpad .item #icon;#launchpad .selectable #icon;.item #icon;.selectable #icon;#icon
+FrameLayout #roombox
+DefaultUI #roombox
+LinearLayout #roombox #launchpad;#launchpad
+RecyclerView #roombox #launchpad;#launchpad
+LaunchpadItemView #roombox #launchpad .item;#roombox #launchpad .selectable;#launchpad .item;#launchpad .selectable;.item;.selectable
+ScrollTextView #roombox #launchpad .item #text;#roombox #launchpad .selectable #text;#launchpad .item #text;#launchpad .selectable #text;.item #text;.selectable #text;#text
+LinearLayout #newsline .item;.selectable
+LinearLayout #newsline .item;.selectable
+TextView #newsline .item #news_title;.selectable #news_title;#news_title
+LinearLayout #newsline .item;.selectable
+TextView #newsline .item #news_date;.selectable #news_date;#news_date
+LinearLayout #newsline .item;.selectable
+TextView #newsline .item #news_content;.selectable #news_content;#news_content

@@ -1,0 +1,113 @@
+/* ========================================== */
+/* Автоматически сгенерированные цвета       */
+/* для ID селекторов                         */
+/* ========================================== */
+/* Метод: Farthest-Point Sampling в OKLab    */
+/* Обеспечивает максимальную визуальную      */
+/* различимость цветов                       */
+/* ========================================== */
+
+#app {
+    background-color: rgb(255, 0, 6);
+}
+
+#clock {
+    background-color: rgb(0, 2, 60);
+}
+
+#content {
+    background-color: rgb(7, 255, 1);
+}
+
+#header {
+    background-color: rgb(1, 115, 254);
+}
+
+#icon {
+    background-color: rgb(255, 213, 254);
+}
+
+#launchpad {
+    background-color: rgb(0, 101, 5);
+}
+
+#location {
+    background-color: rgb(236, 0, 255);
+}
+
+#logo {
+    background-color: rgb(126, 15, 112);
+}
+
+#marquee {
+    background-color: rgb(111, 175, 139);
+}
+
+#message {
+    background-color: rgb(1, 7, 184);
+}
+
+#network_state {
+    background-color: rgb(255, 205, 8);
+}
+
+#new_message_icon {
+    background-color: rgb(9, 255, 239);
+}
+
+#news {
+    background-color: rgb(69, 34, 4);
+}
+
+#news_content {
+    background-color: rgb(172, 109, 168);
+}
+
+#news_date {
+    background-color: rgb(151, 75, 8);
+}
+
+#news_title {
+    background-color: rgb(138, 4, 240);
+}
+
+#newsline {
+    background-color: rgb(55, 93, 133);
+}
+
+#roombox {
+    background-color: rgb(254, 145, 134);
+}
+
+#schedule_state {
+    background-color: rgb(144, 175, 255);
+}
+
+#temp {
+    background-color: rgb(254, 139, 254);
+}
+
+#text {
+    background-color: rgb(3, 196, 1);
+}
+
+#timer_state {
+    background-color: rgb(242, 8, 151);
+}
+
+#title {
+    background-color: rgb(191, 129, 23);
+}
+
+#video {
+    background-color: rgb(58, 5, 108);
+}
+
+#weather {
+    background-color: rgb(234, 255, 193);
+}
+
+#welcome {
+    background-color: rgb(78, 144, 10);
+}
+
