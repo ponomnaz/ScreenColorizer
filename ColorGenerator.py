@@ -208,7 +208,7 @@ class ColorGenerator:
         return int(round(r)), int(round(g)), int(round(b))
 
     @staticmethod
-    def generate_fps_oklab_colors(n, num_samples=500000):
+    def generate_fps_oklab_colors(n, num_samples=10000):
         """
         🌈 GOLD STANDARD: Farthest-Point Sampling в OKLab
 

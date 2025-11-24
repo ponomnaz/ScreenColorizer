@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel TV Interface</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #000;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        #welcome {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect fill="%23334455" width="1920" height="1080"/></svg>');
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        #roombox {
+            display: none;
+        }
+
+        #header {
+            padding: 20px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        #header #weather {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+        }
+
+        #weather #icon {
+            font-size: 24px;
+        }
+
+        #weather #temp {
+            font-weight: 600;
+        }
+
+        #weather #location {
+            opacity: 0.8;
+            font-size: 14px;
+        }
+
+        #header #clock {
+            font-size: 36px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        #header #logo,
+        #header #network_state,
+        #header #new_message_icon,
+        #header #schedule_state,
+        #header #timer_state {
+            display: none;
+        }
+
+        #content {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+        }
+
+        #message {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            font-size: 48px;
+            font-weight: 300;
+            z-index: 3;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
+
+        #marquee {
+            position: absolute;
+            bottom: 140px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.75);
+            font-size: 22px;
+            z-index: 3;
+            white-space: nowrap;
+            border-radius: 3px;
+        }
+
+        #news {
+            position: absolute;
+            top: 130px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 420px;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 15px 25px;
+            z-index: 3;
+            border-radius: 3px;
+        }
+
+        #launchpad {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            height: 100px;
+            background: #000;
+            display: flex;
+            z-index: 4;
+        }
+
+        #launchpad .item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+            border-right: 1px solid #222;
+        }
+
+        #launchpad .item:hover,
+        #launchpad .selectable:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        #launchpad .item:first-child {
+            background: #FFD700;
+        }
+        #launchpad .item #icon {
+            font-size: 36px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #launchpad .item:first-child #icon {
+            color: #000;
+        }
+
+        #launchpad .item #text {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        #launchpad .item:first-child #text {
+            color: #000;
+        }
+
+        #newsline {
+            width: 100%;
+        }
+
+        #newsline .item {
+            padding: 12px 0;
+            background: transparent;
+            border-radius: 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        #newsline .item:hover,
+        .selectable:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        #news_title {
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        #news_date {
+            font-size: 12px;
+            opacity: 0.6;
+            margin-bottom: 8px;
+        }
+
+        #news_content {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .module {
+            margin-bottom: 20px;
+        }
+
+        /* Icon styles */
+        .icon-cart::before { content: "🛒"; }
+        .icon-service::before { content: "🛎"; }
+        .icon-media::before { content: "▶️"; }
+        .icon-news::before { content: "📰"; }
+        .icon-tv::before { content: "📺"; }
+        .icon-puzzle::before { content: "🧩"; }
+        .icon-weather::before { content: "🌤"; }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <div id="video"></div>
+        
+        <div id="message">статический текст</div>
+        
+        <div id="marquee">бегущая строка</div>
+        
+        <div id="news">
+            <div id="newsline">
+                <div class="item selectable">
+                    <div id="news_title">Пока нет новостей/объявлений</div>
+                    <div id="news_date"></div>
+                    <div id="news_content"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="roombox">
+            <div id="header">
+                <div id="weather">
+                    <div id="icon" class="icon-weather"></div>
+                    <div id="temp">0°</div>
+                    <div id="location"></div>
+                </div>
+                <div id="clock">10:34<br><span style="font-size: 18px;">24 ноября, пн</span></div>
+                <div id="logo"></div>
+                <div id="network_state"></div>
+                <div id="new_message_icon"></div>
+                <div id="schedule_state"></div>
+                <div id="timer_state"></div>
+                <div id="app">
+                    <div id="icon"></div>
+                    <div id="title"></div>
+                </div>
+            </div>
+            
+            <div id="content">
+                <!-- Content area -->
+            </div>
+        </div>
+
+        <div id="launchpad">
+            <div class="item selectable">
+                <div id="icon" class="icon-puzzle"></div>
+                <div id="text">Айка</div>
+            </div>
+            <div class="item selectable">
+                <div id="icon" class="icon-cart"></div>
+                <div id="text">Служба отеля</div>
+            </div>
+            <div class="item selectable">
+                <div id="icon" class="icon-media"></div>
+                <div id="text">Медиаплеер</div>
+            </div>
+            <div class="item selectable">
+                <div id="icon" class="icon-news"></div>
+                <div id="text">Новости и информация</div>
+            </div>
+            <div class="item selectable">
+                <div id="icon" class="icon-tv"></div>
+                <div id="text">Интернет ТВ</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

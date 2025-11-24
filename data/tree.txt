@@ -1,0 +1,30 @@
+#newsline
+└── .item
+    ├── #news_content
+    ├── #news_date
+    └── #news_title
+#roombox
+├── #content
+├── #header
+│   ├── #app
+│   │   ├── #icon
+│   │   └── #title
+│   ├── #clock
+│   ├── #logo
+│   ├── #network_state
+│   ├── #new_message_icon
+│   ├── #schedule_state
+│   ├── #timer_state
+│   └── #weather
+│       ├── #icon
+│       ├── #location
+│       └── #temp
+└── #launchpad
+    └── .item
+        ├── #icon
+        └── #text
+#welcome
+├── #marquee
+├── #message
+├── #news
+└── #video
