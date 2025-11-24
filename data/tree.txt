@@ -1,3 +1,40 @@
+#app
+├── #icon
+└── #title
+#clock
+#content
+#header
+├── #app
+│   ├── #icon
+│   └── #title
+├── #clock
+├── #logo
+├── #network_state
+├── #new_message_icon
+├── #schedule_state
+├── #timer_state
+└── #weather
+    ├── #icon
+    ├── #location
+    └── #temp
+#icon
+#launchpad
+├── .item
+│   ├── #icon
+│   └── #text
+└── .selectable
+    ├── #icon
+    └── #text
+#location
+#logo
+#marquee
+#message
+#network_state
+#new_message_icon
+#news
+#news_content
+#news_date
+#news_title
 #newsline
 └── .item
     ├── #news_content
@@ -20,11 +57,38 @@
 │       ├── #location
 │       └── #temp
 └── #launchpad
-    └── .item
+    ├── .item
+    │   ├── #icon
+    │   └── #text
+    └── .selectable
         ├── #icon
         └── #text
+#schedule_state
+#temp
+#text
+#timer_state
+#title
+#video
+#weather
+├── #icon
+├── #location
+└── #temp
 #welcome
 ├── #marquee
 ├── #message
 ├── #news
 └── #video
+.item
+├── #icon
+└── #text
+.module
+├── #marquee
+├── #message
+├── #news
+└── #video
+.selectable
+├── #icon
+├── #news_content
+├── #news_date
+├── #news_title
+└── #text

@@ -30,10 +30,11 @@ class TreeBuilder:
                 # Разделяем по ';' и берём самый длинный путь (он полный)
                 paths = [p.strip() for p in paths_str.split(';') if p.strip()]
                 
-                if paths:
-                    # Берём самый длинный путь (он содержит полную иерархию)
-                    longest = max(paths, key=lambda x: len(x.split()))
-                    all_paths.append(longest)
+                for p in paths:
+                    components = p.split()
+                    if components:
+                        all_paths.append(p)
+
         
         # Строим дерево
         tree = {}
